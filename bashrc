@@ -1,4 +1,6 @@
-PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin:/usr/local/smlnj-110.75/bin:/Users/afk/src/julia
+# PATH=/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:/usr/local/sbin:$PATH:$HOME/.rvm/bin:/usr/local/smlnj-110.75/bin:/Users/afk/src/julia
+# old path: /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:
+PATH=/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/opt/ruby/bin
 export EDITOR='subl -w'
 
 alias ll='ls -alhFG'
@@ -12,6 +14,7 @@ alias load_hs_db="pg_restore --verbose --clean --no-acl --no-owner -h localhost 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 [[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
 
+# this if statement depends on brew install git bash-completion
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
@@ -22,6 +25,6 @@ GIT_PS1_SHOWUNTRACKEDFILES=true
 
 char="`printf '\xE2\x9A\xB2'`"
 
-PS1='\W$(__git_ps1 " [%s]")\ '${char}
+#PS1='\W$(__git_ps1 " [%s]")\ '${char} #this is for git bash completions
 
 export PYTHONSTARTUP=~/py3prompt.py
