@@ -1,5 +1,21 @@
+<<<<<<< HEAD
 [user]
 	name = Matthew Wieler
 	email = mw166301@gmail.com
 [hub]
     protocol = https
+=======
+[hub]
+	protocol = https
+[user]
+	name = Matthew Wieler
+	email = mw166301@gmail.com
+[color]
+	ui = auto
+[credential]
+	helper = osxkeychain
+[push]
+	default = simple
+[alias]
+    plog = log --oneline --graph --all --decorate -30
+>>>>>>> 1a3d6acd7157836debb4e0e7befff07123f13b22
