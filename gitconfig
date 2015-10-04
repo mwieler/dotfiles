@@ -11,4 +11,3 @@
 	default = simple
 [alias]
     plog = log --oneline --graph --all --decorate -30
->>>>>>> 1a3d6acd7157836debb4e0e7befff07123f13b22
