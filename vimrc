@@ -8,3 +8,4 @@ set autoread
 set expandtab
 set tabstop=4
 set clipboard=unnamed
+set ic "ignores case when searching
