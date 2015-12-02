@@ -1,0 +1,4 @@
+begin
+    set -x PYTHONPATH '/usr/local/Cellar/opencv3/3.0.0/lib/python2.7/site-packages'
+    command
+end
